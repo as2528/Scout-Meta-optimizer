@@ -41,8 +41,6 @@ Two probe directions every scout_every=N steps cost
 
 extra_F/B  = 2·(k+1)/N   forward/backward passes.
 
-With the defaults above that’s about **4 %** extra compute.
-
 ### Why it sometimes helps (no theorems yet)
 * **Saddle evasion** – orthogonal poke finds downhill direction when $\|\mathbf{g}\|$ is near 0.  
 * **Shallow-pit escape** – roll-out filters gradients that immediately raise loss.  

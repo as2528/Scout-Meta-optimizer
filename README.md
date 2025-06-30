@@ -1,5 +1,4 @@
 # Scout-Meta-optimizer
-% --- Scout Optimizer: Math-only synopsis ------------------------
 \section{Scout: Gradient Peeking in Rugged Landscapes}
 
 Let $\theta\in\mathbb{R}^{d}$ be the parameter vector,  

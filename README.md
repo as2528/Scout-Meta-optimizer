@@ -24,10 +24,7 @@ Most first-order optimisers are greedy: they step exactly in the current gradien
 3. **Pick winner**  
    $$\hat{\mathbf{d}}^{\star} = \arg\min_{\hat{\mathbf{d}} \in \mathcal{D}} F(\hat{\mathbf{d}})$$
 4. **Replace gradient**   
-
-   $$
-   \mathbf{g}_{\text{scout}} = \|\mathbf{g}\| \, \hat{\mathbf{d}}^{\star}
-   $$  
+   g_scout = ‖g‖ · d_star   (L2 norm of g times the chosen unit direction)
    Pass $\mathbf{g}_{\text{scout}}$ to Adam/SGD/whatever instead of $\mathbf{g}$.
 
 
@@ -41,8 +38,9 @@ Most first-order optimisers are greedy: they step exactly in the current gradien
 
 ### Overhead
 Two probe directions every scout_every=N steps cost  
-$$\text{extra\_F/B} \;=\; \frac{2\,(k+1)}{N}$$  
-forward/backward passes.  
+
+extra_F/B  = 2·(k+1)/N   forward/backward passes.
+
 With the defaults above that’s about **2 %** extra compute.
 
 ### Why it sometimes helps (no theorems yet)

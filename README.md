@@ -25,7 +25,7 @@ Most first-order optimisers are greedy: they step exactly in the current gradien
    $$\hat{\mathbf{d}}^{\star} = \arg\min_{\hat{\mathbf{d}} \in \mathcal{D}} F(\hat{\mathbf{d}})$$
 4. **Replace gradient**   
 $$
-\mathbf{g}_{\text{scout}} = \|\mathbf{g}\| \; \hat{\mathbf{d}}^{\star}
+{\mathbf{g}_{\text{scout}} = \|\mathbf{g}\| \; \hat{\mathbf{d}}^{\star}}
 $$  
 Pass $\mathbf{g}_{\text{scout}}$ to Adam/SGD/whatever instead of $\mathbf{g}$.
 

@@ -2,7 +2,7 @@
 
 ### Quick intuition
 Most first-order optimisers are greedy: they step exactly in the current gradient direction.  
-`Scout` interrupts that every **N** iterations, peeks a few steps into two candidate directions, then hands the base optimiser a *replacement* gradient pointing along the more promising path.
+`Scout` interrupts that every **N** iterations, peeks a few steps into a candidate direction, then hands the base optimiser a *replacement* gradient pointing along the more promising path.
 
 ### Notation
 * $\theta \in \mathbb{R}^{d}$ – parameters  

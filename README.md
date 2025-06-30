@@ -23,9 +23,12 @@ Most first-order optimisers are greedy: they step exactly in the current gradien
      $$F(\hat{\mathbf{d}}) = \min_{0 \le t \le k}\mathcal{L}(\theta^{(t)})$$
 3. **Pick winner**  
    $$\hat{\mathbf{d}}^{\star} = \arg\min_{\hat{\mathbf{d}} \in \mathcal{D}} F(\hat{\mathbf{d}})$$
-4. **Replace gradient**  
-   $$\mathbf{g}_{\text{scout}} = \|\mathbf{g}\| \; \hat{\mathbf{d}}^{\star}$$
-   Pass $\mathbf{g}_{\text{scout}}$ to Adam/SGD/whatever instead of $\mathbf{g}$.
+4. **Replace gradient**   
+$$
+\mathbf{g}_{\text{scout}} = \|\mathbf{g}\| \; \hat{\mathbf{d}}^{\star}
+$$  
+Pass $\mathbf{g}_{\text{scout}}$ to Adam/SGD/whatever instead of $\mathbf{g}$.
+
 
 ### Hyper-parameters (defaults that worked on CIFAR-10)
 | name            | meaning                    | typical |

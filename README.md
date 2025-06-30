@@ -40,7 +40,7 @@ Most first-order optimisers are greedy: they step exactly in the current gradien
 | `lookahead_steps` k | rollout length            | 1       |
 
 ### Overhead
-Two probe directions every `scout_every=N` steps cost  
+Two probe directions every scout_every=N steps cost  
 $$\text{extra\_F/B} \;=\; \frac{2\,(k+1)}{N}$$  
 forward/backward passes.  
 With the defaults above that’s about **2 %** extra compute.

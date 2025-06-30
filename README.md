@@ -1,4 +1,4 @@
-## Scout: “peek-ahead” gradient replacement
+## Scout Meta-optimizer
 
 ### Quick intuition
 Most first-order optimisers are greedy: they step exactly in the current gradient direction.  
